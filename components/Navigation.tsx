@@ -57,6 +57,12 @@ export default function Navigation() {
                 {link.name}
               </a>
             ))}
+            <a 
+              href="#casino" 
+              className="bg-transparent text-casino-gold border-2 border-casino-gold font-bold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-casino-gold/50 text-sm"
+            >
+              Играть
+            </a>
             <a href="https://kick.com/mellstroy987" target="_blank" rel="noopener noreferrer" className="btn-primary text-sm">
               Смотреть Стрим
             </a>
@@ -88,6 +94,13 @@ export default function Navigation() {
                 {link.name}
               </a>
             ))}
+            <a 
+              href="#casino" 
+              className="bg-transparent text-casino-gold border-2 border-casino-gold font-bold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-casino-gold/50 w-full mt-4 text-sm block text-center"
+              onClick={() => setIsOpen(false)}
+            >
+              Играть
+            </a>
             <a href="https://kick.com/mellstroy987" target="_blank" rel="noopener noreferrer" className="btn-primary w-full mt-4 text-sm block text-center">
               Смотреть Стрим
             </a>
