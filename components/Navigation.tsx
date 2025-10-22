@@ -18,8 +18,7 @@ export default function Navigation() {
 
   const navLinks = [
     { name: "Главная", href: "#home" },
-    
-    { name: "Mellstroy.club", href: "#casino" },
+    { name: "О стримере", href: "#about" },
     { name: "Расписание", href: "#schedule" },
     { name: "Комьюнити", href: "#community" },
   ];
@@ -35,13 +34,16 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-3">
             <Image 
               src="/mellog.png" 
               alt="Mellstroy Logo" 
-              width={32} 
-              height={32}
-              className="h-8 w-8 object-contain"
+              width={56} 
+              height={56}
+              className="h-14 w-14 object-contain brightness-110"
+              style={{
+                filter: 'drop-shadow(0 0 8px rgba(255, 215, 0, 0.8)) drop-shadow(0 0 2px rgba(255, 215, 0, 1)) brightness(1.3) saturate(1.5) hue-rotate(-10deg)',
+              }}
             />
             <span className="text-2xl font-bold glow-text">MELLSTROY<span className="text-casino-gold">.GAME</span></span>
           </div>
@@ -57,12 +59,6 @@ export default function Navigation() {
                 {link.name}
               </a>
             ))}
-            <a 
-              href="#casino" 
-              className="bg-transparent text-casino-gold border-2 border-casino-gold font-bold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-casino-gold/50 text-sm"
-            >
-              Играть
-            </a>
             <a href="https://kick.com/mellstroy987" target="_blank" rel="noopener noreferrer" className="btn-primary text-sm">
               Смотреть Стрим
             </a>
@@ -94,13 +90,6 @@ export default function Navigation() {
                 {link.name}
               </a>
             ))}
-            <a 
-              href="#casino" 
-              className="bg-transparent text-casino-gold border-2 border-casino-gold font-bold py-3 px-8 rounded-full transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-casino-gold/50 w-full mt-4 text-sm block text-center"
-              onClick={() => setIsOpen(false)}
-            >
-              Играть
-            </a>
             <a href="https://kick.com/mellstroy987" target="_blank" rel="noopener noreferrer" className="btn-primary w-full mt-4 text-sm block text-center">
               Смотреть Стрим
             </a>

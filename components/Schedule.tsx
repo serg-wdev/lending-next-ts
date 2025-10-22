@@ -24,7 +24,7 @@ export default function Schedule() {
           <div className="casino-card text-center border-casino-gold/50 bg-gradient-to-br from-casino-gold/10 to-purple-900/40">
             <div className="mb-6">
               <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4">
-                Стримы почти каждый день! 🎰
+                Стримы почти каждый день! 🎮
               </h3>
               <p className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed px-4">
                 Mellstroy выходит в эфир почти каждый день в <span className="text-casino-gold font-semibold">неопределенное время</span>. 

@@ -101,14 +101,14 @@ export default function Hero() {
             <span className="block mb-2">WELCOME TO</span>
             <span className="block glow-text text-casino-gold">MELLSTROY</span>
             <span className="block text-3xl sm:text-4xl md:text-5xl mt-4 text-purple-300">
-              Casino Empire
+              Streaming Empire
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
-            Почувствуй адреналин высоких ставок в казино с безумными выигрышами,
-            легендарными моментами и комьюнити, которое никогда не спит.
+            Почувствуй адреналин захватывающих стримов с безумными моментами,
+            легендарными событиями и комьюнити, которое никогда не спит.
           </p>
 
           {/* CTA Buttons */}
@@ -137,8 +137,8 @@ export default function Hero() {
               <div className="flex items-center justify-center mb-2">
                 <TrendingUp className="text-casino-gold" size={32} />
               </div>
-              <div className="text-3xl font-bold text-casino-gold">$330M+</div>
-              <div className="text-gray-400 mt-1">Депозит</div>
+              <div className="text-3xl font-bold text-casino-gold">2K+</div>
+              <div className="text-gray-400 mt-1">Стримов</div>
             </div>
 
             <div className="casino-card text-center">

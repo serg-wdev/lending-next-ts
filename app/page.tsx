@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import CasinoInfo from "@/components/CasinoInfo";
 import Schedule from "@/components/Schedule";
 import Community from "@/components/Community";
 import Footer from "@/components/Footer";
@@ -32,7 +31,6 @@ export default function Home() {
       <Navigation />
       <Hero />
       <About />
-      <CasinoInfo />
       <Schedule />
       <Community />
       <Footer />

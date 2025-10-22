@@ -6,23 +6,23 @@ export default function About() {
   const features = [
     {
       icon: <Trophy className="text-casino-gold" size={40} />,
-      title: "Рекордные Выигрыши",
-      description: "Смотри как Mellstroy срывает легендарные джекпоты и огромные множители, которые взрывают интернет.",
+      title: "Рекордные Моменты",
+      description: "Смотри как Mellstroy создает легендарный контент и эпичные ситуации, которые взрывают интернет.",
     },
     {
       icon: <Zap className="text-casino-gold" size={40} />,
       title: "Энергичные Стримы",
-      description: "Нон-стоп экшен, азарт и развлечения. Каждый стрим - незабываемый опыт.",
+      description: "Нон-стоп экшен, драйв и развлечения. Каждый стрим - незабываемый опыт.",
     },
     {
       icon: <Heart className="text-casino-gold" size={40} />,
       title: "Огромное Комьюнити",
-      description: "Присоединяйся к тысячам фанатов в активном сообществе. Делись выигрышами, стратегиями и эпичными моментами.",
+      description: "Присоединяйся к тысячам фанатов в активном сообществе. Делись впечатлениями, идеями и эпичными моментами.",
     },
     {
       icon: <Star className="text-casino-gold" size={40} />,
       title: "Премиум Контент",
-      description: "Эксклюзивный доступ к бонус хантам, челленджам и закулисному контенту из мира казино.",
+      description: "Эксклюзивный доступ к специальным стримам, челленджам и закулисному контенту из мира развлечений.",
     },
   ];
 
@@ -35,8 +35,8 @@ export default function About() {
             Почему <span className="glow-text text-casino-gold">Mellstroy</span>?
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-gray-300 max-w-2xl mx-auto px-4">
-            Самый зажигательный казино стример, который приносит тебе самые большие выигрыши,
-            безумные моменты и лучшие развлечения в игре.
+            Самый зажигательный стример, который создает самый яркий контент,
+            безумные моменты и лучшие развлечения онлайн.
           </p>
         </div>
 
@@ -64,7 +64,7 @@ export default function About() {
         <div className="mt-20 text-center">
           <div className="casino-card max-w-4xl mx-auto">
             <blockquote className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold italic text-casino-gold mb-4 px-4">
-              "Ва-банк или ничего. Вот как мы играем."
+              "Все или ничего. Вот как мы стримим."
             </blockquote>
             <p className="text-lg sm:text-xl text-gray-300">- Mellstroy</p>
           </div>

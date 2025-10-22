@@ -1,17 +1,17 @@
-# Mellstroy Casino Streamer Landing Site
+# Mellstroy Streamer Landing Site
 
-A modern, sleek landing page for Mellstroy - a casino streamer. Built with Next.js 14, TypeScript, and Tailwind CSS.
+A modern, sleek landing page for Mellstroy - a top entertainment streamer. Built with Next.js 14, TypeScript, and Tailwind CSS.
 
 ## Features
 
-- 🎰 **Stunning Hero Section** - Eye-catching introduction with live status
-- 📊 **Live Stats** - Showcase follower count, total wins, and stream count
+- ✨ **Stunning Hero Section** - Eye-catching introduction with live status
+- 📊 **Live Stats** - Showcase follower count, stream count, and community size
 - 🎯 **Feature Highlights** - Display what makes the stream unique
 - 📅 **Stream Schedule** - Weekly streaming schedule with special events
 - 🌐 **Social Links** - Connect across all social platforms
 - 📱 **Fully Responsive** - Optimized for all devices
-- ✨ **Animated UI** - Smooth animations and transitions
-- 🎨 **Casino Theme** - Gold and purple color scheme with glowing effects
+- ⚡ **Animated UI** - Smooth animations and transitions
+- 🎨 **Modern Theme** - Gold and purple color scheme with glowing effects
 
 ## Getting Started
 
@@ -128,5 +128,5 @@ This project is open source and available under the MIT License.
 
 ## Disclaimer
 
-This is a landing page for entertainment purposes. Please gamble responsibly. 18+ only.
+This is a landing page for entertainment purposes only.
 

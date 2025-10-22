@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Mellstroy - Casino Streamer | Live Gaming & Big Wins",
-  description: "Watch Mellstroy's epic casino streams! Experience high-stakes gambling, massive wins, and non-stop entertainment. Join the community now!",
-  keywords: ["Mellstroy", "casino streamer", "gambling", "slots", "live casino", "big wins"],
+  title: "Mellstroy - Top Streamer | Live Entertainment & Epic Moments",
+  description: "Watch Mellstroy's epic streams! Experience high-energy content, amazing moments, and non-stop entertainment. Join the community now!",
+  keywords: ["Mellstroy", "streamer", "entertainment", "live stream", "gaming", "community"],
 };
 
 export default function RootLayout({
