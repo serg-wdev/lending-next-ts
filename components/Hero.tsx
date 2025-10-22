@@ -99,7 +99,17 @@ export default function Hero() {
           {/* Main Heading */}
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold">
             <span className="block mb-2">WELCOME TO</span>
-            <span className="block glow-text text-casino-gold">MELLSTROY</span>
+            <span className="block">
+              <span className="glow-text text-casino-gold">MELLSTROY</span><span 
+                style={{
+                  WebkitTextStroke: '1.5px #FFD700',
+                  WebkitTextFillColor: 'transparent',
+                  background: 'transparent',
+                  backgroundColor: 'transparent',
+                  fontWeight: '700',
+                }}
+              >.GAME</span>
+            </span>
             <span className="block text-3xl sm:text-4xl md:text-5xl mt-4 text-purple-300">
               Streaming Empire
             </span>
