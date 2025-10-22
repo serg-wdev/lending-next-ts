@@ -53,26 +53,34 @@ export default function Community() {
         </div>
 
         {/* Social Links Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
           {socials.map((social, index) => (
             <a
               key={index}
               href={social.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="casino-card group cursor-pointer hover:scale-105 transform transition-all duration-300"
+              className="casino-card group cursor-pointer hover:scale-105 transform transition-all duration-300 flex sm:block"
             >
-              <div className={`bg-gradient-to-r ${social.color} w-16 h-16 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}>
-                <div className="text-white">
-                  {social.icon}
+              {/* Icon and Info Container */}
+              <div className="flex sm:block w-full">
+                {/* Icon */}
+                <div className={`bg-gradient-to-r ${social.color} w-16 h-16 sm:w-16 sm:h-16 md:w-20 md:h-20 rounded-xl flex items-center justify-center flex-shrink-0 sm:mb-4 group-hover:scale-110 transition-transform`}>
+                  <div className="text-white">
+                    {social.icon}
+                  </div>
                 </div>
-              </div>
-              <h3 className="text-2xl font-bold mb-2 group-hover:text-casino-gold transition-colors">
-                {social.name}
-              </h3>
-              <p className="text-gray-400 mb-3">{social.description}</p>
-              <div className="text-casino-gold font-bold text-lg">
-                {social.followers}
+                
+                {/* Info */}
+                <div className="ml-4 sm:ml-0 flex flex-col justify-center sm:block">
+                  <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2 group-hover:text-casino-gold transition-colors">
+                    {social.name}
+                  </h3>
+                  <p className="text-gray-400 text-sm sm:text-base mb-2 sm:mb-3">{social.description}</p>
+                  <div className="text-casino-gold font-bold text-base sm:text-lg">
+                    {social.followers}
+                  </div>
+                </div>
               </div>
             </a>
           ))}

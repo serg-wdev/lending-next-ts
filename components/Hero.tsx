@@ -45,9 +45,9 @@ export default function Hero() {
     return () => clearInterval(interval);
   }, []);
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center px-4 pt-20 relative overflow-hidden">
+    <section id="home" className="min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 pt-20 pb-10 relative overflow-hidden">
       {/* Фоновые иконки */}
-      <div className="absolute inset-0 pointer-events-none">
+      <div className="absolute inset-0 pointer-events-none hidden md:block">
         {backgroundIcons.map((icon, index) => (
           <div
             key={index}
@@ -76,9 +76,9 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="max-w-7xl mx-auto text-center relative z-10">
+      <div className="max-w-7xl mx-auto text-center relative z-10 w-full">
         {/* Main Hero Content */}
-        <div className="space-y-8">
+        <div className="space-y-6 sm:space-y-8">
           {/* Badge */}
           <div className={`inline-flex items-center space-x-2 ${
             isLive 
@@ -97,12 +97,13 @@ export default function Hero() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold">
-            <span className="block mb-2">WELCOME TO</span>
-            <span className="block">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold px-2">
+            <span className="block mb-2 text-base sm:text-lg md:text-xl lg:text-2xl">WELCOME TO</span>
+            <span className="block leading-tight break-words">
               <span className="glow-text text-casino-gold">MELLSTROY</span><span 
+                className="inline-block"
                 style={{
-                  WebkitTextStroke: '1.5px #FFD700',
+                  WebkitTextStroke: '1px #FFD700',
                   WebkitTextFillColor: 'transparent',
                   background: 'transparent',
                   backgroundColor: 'transparent',
@@ -110,53 +111,53 @@ export default function Hero() {
                 }}
               >.GAME</span>
             </span>
-            <span className="block text-3xl sm:text-4xl md:text-5xl mt-4 text-purple-300">
+            <span className="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-3 sm:mt-4 text-purple-300">
               Streaming Empire
             </span>
           </h1>
 
           {/* Subtitle */}
-          <p className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-300 max-w-3xl mx-auto px-4 leading-relaxed">
             Почувствуй адреналин захватывающих стримов с безумными моментами,
             легендарными событиями и комьюнити, которое никогда не спит.
           </p>
 
           {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-8">
-            <a href="https://kick.com/mellstroy987" target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center space-x-2 w-full sm:w-auto justify-center">
-              <Play size={20} fill="currentColor" />
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mt-6 sm:mt-8 px-4">
+            <a href="https://kick.com/mellstroy987" target="_blank" rel="noopener noreferrer" className="btn-primary flex items-center space-x-2 w-full sm:w-auto justify-center text-sm sm:text-base py-3 sm:py-3 px-6 sm:px-8">
+              <Play size={18} fill="currentColor" className="sm:w-5 sm:h-5" />
               <span>Смотреть Стрим</span>
             </a>
-            <a href="https://t.me/tellstroy" target="_blank" rel="noopener noreferrer" className="btn-secondary flex items-center space-x-2 w-full sm:w-auto justify-center">
-              <Users size={20} />
+            <a href="https://t.me/tellstroy" target="_blank" rel="noopener noreferrer" className="btn-secondary flex items-center space-x-2 w-full sm:w-auto justify-center text-sm sm:text-base py-3 sm:py-3 px-6 sm:px-8">
+              <Users size={18} className="sm:w-5 sm:h-5" />
               <span>Вступить в Комьюнити</span>
             </a>
           </div>
 
           {/* Stats Row */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-16 max-w-4xl mx-auto">
-            <div className="casino-card text-center">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 mt-10 sm:mt-12 lg:mt-16 max-w-4xl mx-auto px-4">
+            <div className="casino-card text-center p-4 sm:p-6">
               <div className="flex items-center justify-center mb-2">
-                <Users className="text-casino-gold" size={32} />
+                <Users className="text-casino-gold w-6 h-6 sm:w-8 sm:h-8" />
               </div>
-              <div className="text-3xl font-bold text-casino-gold">5M+</div>
-              <div className="text-gray-400 mt-1">Подписчиков</div>
+              <div className="text-2xl sm:text-3xl font-bold text-casino-gold">5M+</div>
+              <div className="text-gray-400 mt-1 text-sm sm:text-base">Подписчиков</div>
             </div>
 
-            <div className="casino-card text-center">
+            <div className="casino-card text-center p-4 sm:p-6">
               <div className="flex items-center justify-center mb-2">
-                <TrendingUp className="text-casino-gold" size={32} />
+                <TrendingUp className="text-casino-gold w-6 h-6 sm:w-8 sm:h-8" />
               </div>
-              <div className="text-3xl font-bold text-casino-gold">2K+</div>
-              <div className="text-gray-400 mt-1">Стримов</div>
+              <div className="text-2xl sm:text-3xl font-bold text-casino-gold">2K+</div>
+              <div className="text-gray-400 mt-1 text-sm sm:text-base">Стримов</div>
             </div>
 
-            <div className="casino-card text-center">
+            <div className="casino-card text-center p-4 sm:p-6">
               <div className="flex items-center justify-center mb-2">
-                <Play className="text-casino-gold" size={32} />
+                <Play className="text-casino-gold w-6 h-6 sm:w-8 sm:h-8" />
               </div>
-              <div className="text-3xl font-bold text-casino-gold">910K+</div>
-              <div className="text-gray-400 mt-1">Telegram</div>
+              <div className="text-2xl sm:text-3xl font-bold text-casino-gold">910K+</div>
+              <div className="text-gray-400 mt-1 text-sm sm:text-base">Telegram</div>
             </div>
           </div>
         </div>
